@@ -38,10 +38,10 @@ export default function Example() {
       </h1>
       <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
         <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
-          {socials.map((s) => (
-            <Card>
+          {socials.map((contact, index) => (
+            <Card key={index}>
               <Link
-                href={s.href}
+                href={contact.href}
                 target="_blank"
                 className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24  lg:pb-48  md:p-16"
               >
@@ -50,14 +50,14 @@ export default function Example() {
                   aria-hidden="true"
                 />
                 <span className="relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full dark:text-zinc-200 dar:group-hover:text-white dark:group-hover:bg-zinc-900 border-zinc-500 dark:bg-zinc-900 dark:group-hover:border-zinc-200 drop-shadow-orange">
-                  {s.icon}
+                  {contact.icon}
                 </span>{" "}
                 <div className="z-10 flex flex-col items-center">
                   <span className="text-xl sm:text-sm sm:font-bold font-medium duration-150 lg:text-base dark:text-zinc-200 dark:group-hover:text-white font-display">
-                    {s.handle}
+                    {contact.handle}
                   </span>
                   <span className="mt-4 text-sm text-center duration-1000 dark:text-zinc-400 dark:group-hover:text-zinc-200">
-                    {s.label}
+                    {contact.label}
                   </span>
                 </div>
               </Link>

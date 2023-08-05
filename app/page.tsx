@@ -17,5 +17,3 @@ export default function Home() {
     </main>
   );
 }
-
-// I am a flutter, and next.js developer I love to program to help businesses grow their businesses I also love the scientific side of programming, like math and making simulations. I am also interested in machine learning and I have a good foundation in it . I love learning and I also practice sports.

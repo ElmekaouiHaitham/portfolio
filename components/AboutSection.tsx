@@ -42,10 +42,10 @@ const AboutSection = () => {
             </p>
             <br />
             <p>
-              I've worked on various projects, both independently and by
+              I&apos;ve worked on various projects, both independently and by
               collaborating on open-source initiatives. I enjoy solving complex
               challenges with innovative ideas, striving to make software that
-              has a positive impact on businesses and people's lives.
+              has a positive impact on businesses and people&apos;s lives.
             </p>
             <br />
             <p>
@@ -55,7 +55,7 @@ const AboutSection = () => {
             </p>
             <br />
             <p>
-              Besides application and web development, I'm also passionate about
+              Besides application and web development, I&apos;m also passionate about
               machine learning. My solid foundation in this field allows me to
               integrate AI-driven features into my projects and explore
               innovative solutions.
@@ -66,7 +66,7 @@ const AboutSection = () => {
               <span className="font-bold text-teal-500">
                 never stop growing
               </span>
-              , and that's what I strive to do. I have a passion for technology
+              , and that&apos;s what I strive to do. I have a passion for technology
               and a desire to always push the limits of what is possible. I am
               excited to see where my career takes me and am always open to new
               opportunities. 🙂
@@ -78,7 +78,7 @@ const AboutSection = () => {
             <div className="flex flex-wrap">
               {skills.map((item, index) => {
                 return (
-                  <p className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold">
+                  <p className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold" key={index}>
                     {item.skill}
                   </p>
                 );

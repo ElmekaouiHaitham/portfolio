@@ -79,6 +79,7 @@ const ProjectDetails = () => {
                     <Image
                       src={image}
                       alt=""
+                      key={index}
                       className="rounded-xl shadow-xl hover:opacity-70"
                       width={1000}
                       height={1000}

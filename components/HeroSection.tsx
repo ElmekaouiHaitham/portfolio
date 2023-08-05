@@ -16,7 +16,7 @@ export default function HeroSection() {
             <p className="text-center text-lg mt-4 mb-6 md:text-2xl px-5">
               Je suis un{" "}
               <span className="font-semibold text-teal-600">
-                développeur d'applications et de sites web{" "}
+                développeur d&apos;applications et de sites web{" "}
               </span>
               , travaillant à créer des logiciels qui rendent la vie plus facile
               et plus significative.
