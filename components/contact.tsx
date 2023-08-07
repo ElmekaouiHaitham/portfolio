@@ -33,7 +33,7 @@ export default function Example() {
   return (
     <section id="contact">
       <h1 className="mt-28 text-center font-bold text-4xl">
-        Contact info
+        Contact
         <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
       </h1>
       <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">

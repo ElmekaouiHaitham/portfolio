@@ -1,8 +1,8 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import SlideUp from "./SlideUp";
-import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 import { SiFlutter } from "react-icons/si";
 import projects from "../public/ProjectsData";
 
@@ -21,7 +21,10 @@ const ProjectsSection = () => {
               <SlideUp offset="-300px 0px -300px 0px">
                 <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
                   <div className="md:w-1/2 flex justify-center items-center">
-                    <Link href={`/projects/${project.name}`}>
+                    <Link
+                      as={`/projects/${project.name}`}
+                      href={`/projects/${project.name}`}
+                    >
                       <Image
                         src={project.previewImg}
                         alt=""
@@ -37,6 +40,10 @@ const ProjectsSection = () => {
                       {project.description}
                     </p>
                     <div className="flex flex-row align-bottom space-x-4">
+                      <SiFlutter
+                        size={0}
+                        className="hover:-translate-y-1 transition-transform cursor-pointer hidden"
+                      />
                       {project.frameworks.map((frameworkIcon, inx) => {
                         return frameworkIcon;
                       })}

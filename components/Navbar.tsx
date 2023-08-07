@@ -17,9 +17,9 @@ class NavItem {
 }
 
 const NAV_ITEMS: Array<NavItem> = [
-  new NavItem("Home", "home"),
-  new NavItem("About", "about"),
-  new NavItem("Projects", "projects"),
+  new NavItem("Accueil", "home"),
+  new NavItem("À propos", "about"),
+  new NavItem("Projets", "projects"),
   new NavItem("Contact", "contact"),
 ];
 
@@ -34,7 +34,7 @@ export default function Navbar() {
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <div className="container flex items-center space-x-2">
-              <h2 className="text-2xl font-bold">Welcome</h2>
+              <h2 className="text-2xl font-bold">Bienvenue</h2>
             </div>
             <div className="md:hidden">
               <button

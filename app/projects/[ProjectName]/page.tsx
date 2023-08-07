@@ -1,15 +1,17 @@
-import { notFound } from "next/navigation";
-import { useRouter } from "next/router";
-import projects from "../../public/ProjectsData";
+"use client";
+import projects from "../../../public/ProjectsData";
 import Image from "next/image";
 import Link from "next/link";
-import "../../styles/globals.css";
+import "../../../styles/globals.css";
 
-const ProjectDetails = () => {
-  const router = useRouter();
-  const { ProjectName } = router.query;
+type Props = {
+  params: {
+    ProjectName: string;
+  };
+};
 
-  console.log("ProjectName" + ProjectName);
+const ProjectDetails = ({ params }: Props) => {
+  const ProjectName = decodeURIComponent(params.ProjectName);
 
   const project = projects.find((project) => project.name === ProjectName);
 

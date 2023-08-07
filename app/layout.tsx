@@ -1,10 +1,49 @@
-"use client";
+import { Metadata } from "next";
 import "../styles/globals.css";
 import { Inter } from "next/font/google";
-import { ThemeProvider } from "next-themes";
+
+export const metadata: Metadata = {
+  title: {
+    default: "haitham-elm.vercel.app",
+    template: "%s | chronark.com",
+  },
+  description: "développeur d&apos;applications et de sites web",
+  openGraph: {
+    title: "haitham-elm.vercel.app",
+    description:
+      "Software engineer at upstash.com and founder of planetfall.io",
+    url: "https://haitham-elm.vercel.app",
+    siteName: "haitham-elm.vercel.app",
+    images: [
+      {
+        url: "https://haitham-elm.vercel.app/og.png",
+        width: 1920,
+        height: 1080,
+      },
+    ],
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  twitter: {
+    title: "Haitham",
+    card: "summary_large_image",
+  },
+  icons: {
+    shortcut: "/favicon.svg",
+  },
+};
 
 const inter = Inter({ subsets: ["latin"] });
-
 
 export default function RootLayout({
   children,
@@ -12,13 +51,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="icon" href="/haitham_icon.svg" sizes="any" />
-      </head>
-      <ThemeProvider enableSystem={true} attribute="class">
-        <body className={inter.className}>{children}</body>
-      </ThemeProvider>
+    <html lang="fr">
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

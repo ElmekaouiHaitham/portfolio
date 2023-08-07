@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 const skills = [
   { skill: "HTML" },
@@ -26,59 +25,68 @@ const AboutSection = () => {
     <section id="about">
       <div className="flex justify-center items-center flex-col w-screen px-7 md:px-28">
         <div>
-          <h1 className="text-4xl font-bold">About Me</h1>
+          <h1 className="text-4xl font-bold">À propos de moi</h1>
         </div>
         <hr className="w-6 h-1 mx-auto my-4 mb-5 bg-teal-500 border-0 rounded"></hr>
-        <div className="flex flex-col sm:flex-row gap-11 mt-4">
+        <div className="flex flex-col md:flex-row gap-11 mt-4">
           <div className="flex-1">
-            <h1 className="text-2xl font-bold mb-3">Get to know me!</h1>
+            <h1 className="text-2xl font-bold mb-3">Faisons connaissance !</h1>
             <p>
-              Hi, my name is Haitham, and I am a{" "}
-              <span className="font-bold">highly ambitious</span>,
-              <span className="font-bold"> self-motivated</span>, and{" "}
-              <span className="font-bold">passionate</span> developer with
-              expertise in Flutter for cross-platform magic, Next.js for
-              optimized web performance, and Flask for flexible backend APIs.
+              Salut, je m&apos;appelle Haitham et je suis un développeur{" "}
+              <span className="font-bold">extrêmement ambitieux</span>,
+              <span className="font-bold"> motivé</span> et{" "}
+              <span className="font-bold">passionné</span>, spécialisé dans
+              Flutter pour la magie multiplateforme, Next.js pour des
+              performances web optimisées et Flask pour des API backend
+              flexibles.
             </p>
             <br />
             <p>
-              I&apos;ve worked on various projects, both independently and by
-              collaborating on open-source initiatives. I enjoy solving complex
-              challenges with innovative ideas, striving to make software that
-              has a positive impact on businesses and people&apos;s lives.
+              J&apos;ai travaillé sur différents projets, tant de manière
+              indépendante que dans le cadre de collaborations sur des
+              initiatives open-source. J&apos;aime relever des défis complexes avec
+              des idées innovantes, en m&apos;efforçant de créer des logiciels ayant
+              un impact positif sur les entreprises et la vie des gens.
             </p>
             <br />
             <p>
-              My fascination with the scientific side of programming drives me
-              to explore math, physics, and build simulations for real-world
-              scenarios, enhancing my problem-solving abilities.
+              Ma fascination pour l&apos;aspect scientifique de la programmation
+              m&apos;incite à explorer les mathématiques, la physique et à développer
+              des simulations pour des scénarios du monde réel, améliorant ainsi
+              mes capacités de résolution de problèmes.
             </p>
             <br />
             <p>
-              Besides application and web development, I&apos;m also passionate about
-              machine learning. My solid foundation in this field allows me to
-              integrate AI-driven features into my projects and explore
-              innovative solutions.
+              En plus du développement d&apos;applications et de sites web, je suis
+              également passionné par l&apos;apprentissage automatique (machine
+              learning). Mes solides bases dans ce domaine me permettent
+              d&apos;intégrer des fonctionnalités basées sur l&apos;intelligence
+              artificielle dans mes projets et d&apos;explorer des solutions
+              innovantes.
             </p>
             <br />
             <p>
-              I believe that you should{" "}
+              Je crois qu&apos;il ne faut{" "}
               <span className="font-bold text-teal-500">
-                never stop growing
+                jamais cesser de grandir
               </span>
-              , and that&apos;s what I strive to do. I have a passion for technology
-              and a desire to always push the limits of what is possible. I am
-              excited to see where my career takes me and am always open to new
-              opportunities. 🙂
+              , et c&apos;est ce à quoi je m&apos;efforce de faire. J&apos;ai une passion pour
+              la technologie et le désir de repousser constamment les limites de
+              ce qui est possible. Je suis enthousiaste à l&apos;idée de voir où ma
+              carrière me mènera et suis toujours ouvert aux nouvelles
+              opportunités. 🙂
             </p>
           </div>
 
           <div className="flex-1">
-            <h1 className="text-2xl font-bold mb-6">My skills</h1>
+            <h1 className="text-2xl font-bold mb-6">Mes compétences</h1>
             <div className="flex flex-wrap">
               {skills.map((item, index) => {
                 return (
-                  <p className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold" key={index}>
+                  <p
+                    className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
+                    key={index}
+                  >
                     {item.skill}
                   </p>
                 );
