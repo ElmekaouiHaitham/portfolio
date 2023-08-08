@@ -7,11 +7,10 @@ export const metadata: Metadata = {
     default: "haitham-elm.vercel.app",
     template: "%s | chronark.com",
   },
-  description: "développeur d&apos;applications et de sites web",
+  description: "développeur d'applications et de sites web",
   openGraph: {
     title: "haitham-elm.vercel.app",
-    description:
-      "Software engineer at upstash.com and founder of planetfall.io",
+    description: "développeur d'applications et de sites web",
     url: "https://haitham-elm.vercel.app",
     siteName: "haitham-elm.vercel.app",
     images: [
