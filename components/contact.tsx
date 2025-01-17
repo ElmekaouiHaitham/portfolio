@@ -5,7 +5,7 @@ import { Card } from "../components/card";
 import {
   AiOutlineWhatsApp,
   AiOutlineMail,
-  AiOutlineTwitter,
+  AiOutlineGithub
 } from "react-icons/ai";
 
 const socials = [
@@ -21,6 +21,12 @@ const socials = [
     label: "whatsApp",
     handle: "(+212)688007649",
   },
+  {
+    icon: <AiOutlineGithub size={20} />,
+    href: "https://github.com/ElmekaouiHaitham",
+    label: "Github",
+    handle: "ElmekaouiHaitham",
+  },
 ];
 
 export default function Example() {
@@ -31,7 +37,7 @@ export default function Example() {
         <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
       </h1>
       <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
-        <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-2 lg:gap-16">
+        <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
           {socials.map((contact, index) => (
             <Card key={index}>
               <Link
