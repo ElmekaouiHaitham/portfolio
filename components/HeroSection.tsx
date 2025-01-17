@@ -16,10 +16,9 @@ export default function HeroSection() {
             <p className="text-center text-lg mt-4 mb-6 md:text-2xl px-5">
               Je suis un{" "}
               <span className="font-semibold text-teal-600">
-                développeur d&apos;applications et de sites web{" "}
+                élève en ingénierie à l&apos;ENSAMr, {" "}
               </span>
-              , travaillant à créer des logiciels qui rendent la vie plus facile
-              et plus significative.
+              passionné par ld&apos;IA, le web et les mathématiques, en constante exploration pour créer des solutions qui simplifient et enrichissent la vie.
             </p>
           </div>
         </div>
