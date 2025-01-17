@@ -1,9 +1,35 @@
 import { AiFillHtml5 } from 'react-icons/ai'
 import { FaCss3, FaGoogle } from 'react-icons/fa'
-import { SiFlask, SiPython, SiFlutter, SiFirebase, SiOpenai } from 'react-icons/si'
+import { SiFlask, SiPython, SiFlutter, SiFirebase, SiOpenai, SiNextdotjs, SiScikitlearn } from 'react-icons/si'
 import "../styles/globals.css";
 
 const projects = [
+    {
+        isMobile: false,
+        name: "Rabat Weather app",
+        description:
+            "Rabat Weather est une application web qui fournit des données météorologiques actuelles et des prévisions sur 24 heures pour la température et la probabilité de pluie à Rabat. check it out on: https://github.com/ElmekaouiHaitham/weather-app",
+        previewImg: "/weather.png",
+        images: ["/weather.png",],
+        frameworks: [
+            <SiPython
+                size={30}
+                className="hover:-translate-y-1 transition-transform cursor-pointer"
+            />,
+            <SiNextdotjs
+                size={30}
+                className="hover:-translate-y-1 transition-transform cursor-pointer"
+            />,
+            <SiScikitlearn
+                size={30}
+                className="hover:-translate-y-1 transition-transform cursor-pointer"
+            />,
+            <SiFlask
+                size={30}
+                className="hover:-translate-y-1 transition-transform cursor-pointer"
+            />,
+        ]
+    },
     {
         isMobile: false,
         name: "UML TO CODE",
@@ -87,6 +113,7 @@ const projects = [
             />,
         ]
     },
+
 ]
 
 export default projects;
