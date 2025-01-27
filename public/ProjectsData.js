@@ -1,9 +1,35 @@
 import { AiFillHtml5 } from 'react-icons/ai'
 import { FaCss3, FaGoogle } from 'react-icons/fa'
-import { SiFlask, SiPython, SiFlutter, SiFirebase, SiOpenai, SiNextdotjs, SiScikitlearn } from 'react-icons/si'
+import { SiSqlite, SiFlask, SiPython, SiFlutter, SiFirebase, SiOpenai, SiNextdotjs, SiScikitlearn } from 'react-icons/si'
 import "../styles/globals.css";
 
 const projects = [
+    {
+        isMobile: false,
+        name: "Ecommerce web app",
+        description:
+            "Zhirictronics est un website d'e-commerce crée avec Nextjs pour l front end et Flask et sqlite par l backend (panel e contrôle), le vendeur peut ajouter, modifier est monitorer les produits. check it out on: https://github.com/ElmekaouiHaitham/ecommerce",
+        previewImg: "/ecommerce1.png",
+        images: ["/ecommerce1.png", "/ecommerce2.png", "/ecommerce3.png", "/ecommerce4.png", "/ecommerce5.png", "/ecommerce6.png", "/ecommerce7.png",],
+        frameworks: [
+            <SiPython
+                size={30}
+                className="hover:-translate-y-1 transition-transform cursor-pointer"
+            />,
+            <SiNextdotjs
+                size={30}
+                className="hover:-translate-y-1 transition-transform cursor-pointer"
+            />,
+            <SiSqlite
+                size={30}
+                className="hover:-translate-y-1 transition-transform cursor-pointer"
+            />,
+            <SiFlask
+                size={30}
+                className="hover:-translate-y-1 transition-transform cursor-pointer"
+            />,
+        ]
+    }, 
     {
         isMobile: false,
         name: "Rabat Weather app",
@@ -30,6 +56,7 @@ const projects = [
             />,
         ]
     },
+
     {
         isMobile: false,
         name: "UML TO CODE",
