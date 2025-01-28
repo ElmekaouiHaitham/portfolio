@@ -8,7 +8,7 @@ const projects = [
         isMobile: false,
         name: "Ecommerce web app",
         description:
-            "Zhirictronics est un website d'e-commerce crée avec Nextjs pour l front end et Flask et sqlite par l backend (panel e contrôle), le vendeur peut ajouter, modifier est monitorer les produits. check it out on: https://github.com/ElmekaouiHaitham/ecommerce",
+            "Zhirictronics est un site web d'e-commerce créé avec Next.js pour le front-end et Flask avec SQLite pour le back-end (panel de contrôle). Le vendeur peut ajouter, modifier et suivre les produits. Découvrez-le ici : https://github.com/ElmekaouiHaitham/ecommerce.",
         previewImg: "/ecommerce1.png",
         images: ["/ecommerce1.png", "/ecommerce2.png", "/ecommerce3.png", "/ecommerce4.png", "/ecommerce5.png", "/ecommerce6.png", "/ecommerce7.png",],
         frameworks: [
@@ -29,7 +29,7 @@ const projects = [
                 className="hover:-translate-y-1 transition-transform cursor-pointer"
             />,
         ]
-    }, 
+    },
     {
         isMobile: false,
         name: "Rabat Weather app",
